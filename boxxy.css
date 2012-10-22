@@ -1,0 +1,27 @@
+/* 
+    Document   : boxxy
+    Created on : 2012-10-22
+    Author     : James Huston
+    Description:
+    Style the boxxy jquery widget.
+*/
+
+.boxxy-header {
+    background-color: #6B8E23;
+    color: white;
+    font-weight: bold;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.boxxy-content {
+    background-color: #dcdcdc;
+    padding: 5px;
+    border-top: 2px solid #666;
+}
+
+.boxxy-wrapper {
+    border: 2px solid #666;
+    border-collapse: collapse;
+    margin: 2px;
+}
