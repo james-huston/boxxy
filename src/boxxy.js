@@ -36,35 +36,35 @@ $.widget("custom.boxxy", {
          * the body. Yo.
          */
         this.header = $("<div>", {
-            text: this.options.headerText,
-            class: "boxxy-header"
+            text: this.options.headerText
         }).appendTo(this.element);
+        this.header.addClass("boxxy-header");
 
         /*
          * Put an indicator area inside of our header to show
          * if we are visible or not.
          */
         this.indicator = $("<span>", {
-            class: "boxxy-indicator",
             html: "+"
         }).appendTo(this.header);
+        this.indicator.addClass("boxxy-indicator");
 
         /*
          * Put our content in it's own div inside of our wrapper
          * and under our header.
          */
         this.content = $(
-            "<div>"
-            ,{
-                class: "boxxy-content",
+            "<div>",
+            {
                 html: blockBody
             }
         ).appendTo(this.element);
+        this.content.addClass("boxxy-content");
 
         /*
          * Get rid of that ugly 2nd copy of our content. Eww.
          */
-        delete blockBody;
+        blockBody = '';
 
         /*
          * Put our wrapper class on the original div that contains
