@@ -12,14 +12,21 @@
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
   <script src="../node_modules/expect.js/expect.js"></script>
   <script src="../node_modules/mocha/mocha.js"></script>
-  <script>mocha.setup('bdd')</script>
+  <script>
+    mocha.setup('bdd')
+    mocha.reporter('html');
+  </script>
 
   <script src="../src/boxxy.js"></script>
 
   <script src="unit/jquery.js"></script>
   <script src="unit/boxxy.js"></script>
   <script>
-    mocha.run();
+      if (window.mochaPhantomJS) {
+        mochaPhantomJS.run();
+      } else {
+        mocha.run();
+      }
   </script>
 </body>
 </html>

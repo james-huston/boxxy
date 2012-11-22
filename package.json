@@ -1,0 +1,9 @@
+{
+   "name": "boxxy",
+   "version": "0.1.0",
+   "dependencies": {
+       "expect.js": ">=0.2.0"
+       ,"mocha": ">=1.7.0"
+       ,"mocha-phantomjs": ">=1.0.1"
+   }
+}
